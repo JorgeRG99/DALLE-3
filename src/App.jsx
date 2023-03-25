@@ -3,7 +3,7 @@ import { Configuration, OpenAIApi } from "openai";
 import { InputBox } from "./InputBox.jsx";
 
 const configuration = new Configuration({
-  apiKey: process.env.REACT_APP_API_KEY,
+  apiKey: import.meta.env.VITE_APP_API_KEY,
 });
 const openai = new OpenAIApi(configuration);
 
